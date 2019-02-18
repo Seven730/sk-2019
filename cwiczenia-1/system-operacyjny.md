@@ -4,16 +4,16 @@ System operacyjny w środowisku sieciowym
 Charakterystyka systemu operacyjnego
 ------------------------------------
 
-| Charakterystyka | wartość           | komentarzu |
+| Charakterystyka | wartość           | komentarz |
 | ------------- |:-------------:| -----:|
 | nazwa      | linux | centos 7 |
-| program (parametry sieci)      | niewiem |  |
+| program (parametry sieci)      | terminal | sudo nmcli |
 
 
 Konfiguracja połączenia sieciowego
 ----------------------------------
 
-| Parametr | wartość           | komentarzu |
+| Parametr | wartość           | komentarz |
 | ------------- |:-------------:| -----:|
 | Adres IP      | 10.0.2.15 | przydzielony przez DHCP |
 | Maska podsieci      | gumiforest.uek.krakow.pl |  |
@@ -24,10 +24,4 @@ Konfiguracja połączenia sieciowego
 Schemat sieci
 -------------
 
-aby załączyć obrazek 
-
-```markdown
-![alt schemat](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)![alt schemat](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
-
-![alt schemat](images/my-network-schema.png)
-```
+![alt schemat](https://github.com/Seven730/sk-2019/blob/master/cwiczenia-1/schemat.png) 
