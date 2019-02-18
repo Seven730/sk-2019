@@ -7,7 +7,7 @@ Charakterystyka systemu operacyjnego
 | Charakterystyka | wartość           | komentarz |
 | ------------- |:-------------:| -----:|
 | nazwa      | linux | centos 7 |
-| program (parametry sieci)      | terminal | sudo nmcli  ifup nazwa |
+| program (parametry sieci)      | sudo nmcli |    |
 
 
 Konfiguracja połączenia sieciowego
@@ -25,3 +25,5 @@ Schemat sieci
 -------------
 
 ![alt schemat](https://github.com/Seven730/sk-2019/blob/master/cwiczenia-1/schemat.png) 
+
+```ifup nazwa```
