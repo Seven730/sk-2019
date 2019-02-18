@@ -24,6 +24,4 @@ Konfiguracja połączenia sieciowego
 Schemat sieci
 -------------
 
-![alt schemat](https://github.com/Seven730/sk-2019/blob/master/cwiczenia-1/schemat.png) 
-
-```ifup nazwa```
+![alt schemat](https://github.com/Seven730/sk-2019/blob/master/cwiczenia-1/schemat.png)
