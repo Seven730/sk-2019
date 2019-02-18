@@ -7,7 +7,7 @@ Charakterystyka systemu operacyjnego
 | Charakterystyka | wartość           | komentarz |
 | ------------- |:-------------:| -----:|
 | nazwa      | linux | centos 7 |
-| program (parametry sieci)      | terminal | sudo nmcli |
+| program (parametry sieci)      | terminal | sudo nmcli  ifup nazwa |
 
 
 Konfiguracja połączenia sieciowego
