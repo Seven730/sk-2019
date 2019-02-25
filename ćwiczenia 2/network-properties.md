@@ -9,30 +9,32 @@ Ustawianie parametrów sieci
 
 Wejściowe parametry sieci
 -------------------------
-| Parametr | wartość | komentarz(opcionalny) |
+| Parametr | wartość | komentarz(opcjonalny) |
 | ------------- |:-------------:| -----:|
 |   PC 1 | 1 
-| IP - address  | 10.7.100.4/24 | |
+| IP - address  | 10.7.100.4```/24``` | |
 | MASKA  | gumiforest.uek.krakow.pl | |
 |   |  | |
 | PC 2  | 2 | |
-| IP - address  | 10.7.100.5/24 | |
+| IP - address  | 10.7.100.5```/24``` | |
 | MASKA  | gumiforest.uek.krakow.pl | |
 
 Weryfikacja połączenia
 
 Polecenie
-```ping...
-```
+ping 10.7.100.4
+ping 10.7.100.5
 
 Efekt
-```64 bytes from 10.7.100.4: icmp_seq=.. ttl=64 time=0.410 ms
-```
+64 bytes from 10.7.100.4: icmp_seq=1 ttl=64 time=0.410 ms
+...
+64 bytes from 10.7.100.5: icmp_seq=1 ttl=64 time=0.346 ms
+...
 
 Statyczna konfiguracja parametrów połączenia
 Wejściowe parametry sieci
 -------------------------
-| Parametr | wartość | komentarz(opcionalny) |
+| Parametr | wartość | komentarz(opcjonalny) |
 | ------------- |:-------------:| -----:|
 |   PC 1 |  
 | IP - address  | 192.168.10.10 | |
@@ -55,7 +57,7 @@ Efekt
 Nowa statyczna konfiguracja 
 
 -------------------------
-| Parametr | wartość | komentarz(opcionalny) |
+| Parametr | wartość | komentarz(opcjonalny) |
 | ------------- |:-------------:| -----:|
 |   PC 1 |  
 | IP - address  |  | |
