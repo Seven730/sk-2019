@@ -12,12 +12,12 @@ Wejściowe parametry sieci
 | Parametr | wartość | komentarz(opcjonalny) |
 | ------------- |:-------------:| -----:|
 |   PC 1 | 1 
-| IP - address  | 10.7.100.4```/24``` | |
-| MASKA  | gumiforest.uek.krakow.pl | |
+| IP - address  | 10.7.100.4 | |
+| MASKA  | 24 | |
 |   |  | |
 | PC 2  | 2 | |
-| IP - address  | 10.7.100.5```/24``` | |
-| MASKA  | gumiforest.uek.krakow.pl | |
+| IP - address  | 10.7.100.5 | |
+| MASKA  | 24 | |
 
 Weryfikacja połączenia
 
@@ -132,4 +132,6 @@ curl -d '{"last_message_id":-1}' http://10.7.100.4:8888/messages | python -m jso
 curl -d '{"text":"hello"}' http://10.7.100.4:8888/chat
 
 systemctl stop firewalld
+
+gumiforest.uek.krakow.pl
 
