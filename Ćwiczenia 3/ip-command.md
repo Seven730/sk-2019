@@ -61,6 +61,8 @@ hasło: 123qwe
 
 https://tlk.io/sk-2019
 
+https://s3.eu-central-1.amazonaws.com/jkan.pl/PC1.7z
+
 https://file.pizza/eggplant-cumin-capers-parsley
 
 ip link set enp0s3 down - wyłącza interfejs
