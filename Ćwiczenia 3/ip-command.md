@@ -66,3 +66,25 @@ https://file.pizza/eggplant-cumin-capers-parsley
 ip link set enp0s3 down - wyłącza interfejs
 
 ip link set enp0s3 up - włącza interfejs
+
+ip addr show dev *nazwa interfejsu*
+
+ip addr show dev lo
+
+ip addr show dev enp0s3
+
+ip addr add 172.16.100.10/24 dev enp0s3
+
+ip addr del 172.16.100.10/24 dev enp0s3
+
+ip link set enp0s3 up/down
+
+git clone https://github.com/jkanclerz/http-chat
+
+cd server
+
+python httpchat.py
+
+curl -X POST -d '{"text": ":D"}' http://172.16.100.10:8888/chat   TO NA PC1?
+
+curl -X POST -d '{"last_message_id": -l}' http://172.16.100.10:8888/messages | python -m json.tool
