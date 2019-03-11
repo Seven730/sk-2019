@@ -52,3 +52,17 @@ Zadanie
    * Przygotuj dokumentację pisemno obrazkową z wykonania zadania w formacie ``markdown`` zamieść ją w serwisie ``github.com`` obok obocnego tematu ``cwiczenia-3``
 
 ![zadanie 3.1](cwiczenia3.1.svg) 
+
+NOTATKI
+
+login: root
+
+hasło: 123qwe
+
+https://tlk.io/sk-2019
+
+https://file.pizza/eggplant-cumin-capers-parsley
+
+ip link set enp0s3 down - wyłącza interfejs
+
+ip link set enp0s3 up - włącza interfejs
