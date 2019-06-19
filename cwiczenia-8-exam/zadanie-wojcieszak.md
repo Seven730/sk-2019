@@ -43,8 +43,11 @@ Okazało się, że odpowiednia linia była już odkomentowana co oznaczało, że
 
 Następnie ustawiłem routing żeby defaultowo szło na wyjściowy interfejs
 ip route, defaultowo miałem 10.0.4.2 dev enp0s9
+
 ip route del default
+
 ip route
+
 ip route add default dev enp0s9
 
 Podpiąłem interfejsy PC1 i PC2 do PC0
