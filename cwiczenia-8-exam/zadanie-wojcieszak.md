@@ -61,3 +61,8 @@ Sprawdziłem czy mogę spingować www.google.pl oczywiście, że nie, bo nie ust
 ip route add default via 172.22.160.2 ... dalej nie działa, jeszcze raz zrobiłem wszystko na PC0, nie działało, ale zresetowałem maszynę i pakiety wysyłają się prawidłowo, super!
 
 ![x](working.png)
+
+
+Wystarczyło operacje powtórzyć na PC2 oraz zrobić diagram w programie Dia
+
+![y](Diagram1.png)
