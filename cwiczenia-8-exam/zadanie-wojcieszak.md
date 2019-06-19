@@ -27,9 +27,34 @@ PC2 - LAN2
 PC0 - LAN1 LAN2 NAT
 
 PC0:
-Włączyłem PC0, sprawdziłem połączenie z internetem - nie działa.
-Sprawdziłem co się dzieje ip a.
+Włączyłem PC0, sprawdziłem połączenie z internetem pingiem - nie działa.
+Sprawdziłem co się dzieje ip a oraz ip route.
 Wszedłem w plik interfaces i go edytowałem w nano za pomocą komedy:
 nano /etc/network/interfaces
 
-Zmieniłem interfejsy na 
+Dodałem interfejs enp0s9 wpisując dwie linijki:
+auto enp0s9 
+iface enp0s9 inet dhcp
+Usunąłem domyślny adres i maskę routingu, zresetowałem maszynę, ping www.google.pl działa!
+
+Dalej żeby możliwe było przesyłanie pakietów z PC1 i PC2 musiałem ustawić ip forwarding.
+W tym celu użyłem polecenia nano /etc/sysctl.conf 
+Okazało się, że odpowiednia linia była już odkomentowana co oznaczało, że forwarding jest ustawiony!
+
+Następnie ustawiłem routing żeby defaultowo szło na wyjściowy interfejs
+ip route, defaultowo miałem 10.0.4.2 dev enp0s9
+ip route del default
+ip route
+ip route add default dev enp0s9
+
+Podpiąłem interfejsy PC1 i PC2 do PC0
+ip a add 172.22.160.2/23 dev enp0s3
+ip a add 172.22.128.2/19 dev enp0s8
+
+PC1:
+Włączyłem PC1, od razu dodałem adres IP komendą: ip a add 172.22.160.1/23 dev enp0s3
+Sprawdziłem czy jest połączenie z PC0 komendą: ping 172.22.160.2  ... jest!
+Sprawdziłem czy mogę spingować www.google.pl oczywiście, że nie, bo nie ustawiłem routingu
+ip route add default via 172.22.160.2 ... dalej nie działa
+
+
