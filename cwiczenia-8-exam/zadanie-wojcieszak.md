@@ -55,6 +55,6 @@ PC1:
 Włączyłem PC1, od razu dodałem adres IP komendą: ip a add 172.22.160.1/23 dev enp0s3
 Sprawdziłem czy jest połączenie z PC0 komendą: ping 172.22.160.2  ... jest!
 Sprawdziłem czy mogę spingować www.google.pl oczywiście, że nie, bo nie ustawiłem routingu
-ip route add default via 172.22.160.2 ... dalej nie działa, jeszcze raz zrobiłem wszystko na PC0, nie działało, ale zresetowałem maszynę i efekt jest zniewalający!
+ip route add default via 172.22.160.2 ... dalej nie działa, jeszcze raz zrobiłem wszystko na PC0, nie działało, ale zresetowałem maszynę i pakiety wysyłają się prawidłowo, super!
 
-
+![x](working.png)
