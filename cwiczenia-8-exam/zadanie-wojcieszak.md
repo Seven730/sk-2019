@@ -63,6 +63,4 @@ ip route add default via 172.22.160.2 ... dalej nie działa, jeszcze raz zrobił
 ![x](working.png)
 
 
-Wystarczyło operacje powtórzyć na PC2 oraz zrobić diagram w programie Dia
-
-![y](Diagram1.png)
+Wystarczyło powtórzyć operację na PC2 i gotowe! :)
